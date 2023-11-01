@@ -1,0 +1,6 @@
+<mat-card class="min-h-[250px] flex flex-col justify-center hover:bg-gray-100">
+  <mat-card-content *ngFor="let text of cardDetails.text">{{text}}</mat-card-content>
+  <mat-card-actions align="end">
+    <button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded" (click)="addText(this.cardDetails.id)" mat-button>Show More</button>
+  </mat-card-actions>
+</mat-card>
